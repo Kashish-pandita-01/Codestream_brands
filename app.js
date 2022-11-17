@@ -26,8 +26,9 @@ app.use('/users', usersRouter);
 app.use(function(req, res, next) {
   next(createError(404));
 });
+//code This is new
 
-// error handler
+//error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
@@ -42,4 +43,5 @@ app.listen(3002, ()=>{
   console.log("Server is runnig on port 3002")
 
 })
-module.exports = app;
+module.exports = app
+//hello
